@@ -14,7 +14,7 @@
 2. Initialisez un dépôt git
 3. Effectuez la liaison entre votre dépôt local et le dépôt distant sur GitHub, GitLab ou BitBucket
 - Il faut créer un nouveau dépôt GitHub
-- Ensuite en local, effectuez la commande `git remote add origin [URL_GITHUB_DEPOT_DISTANT]`, en remplaçant *[URL_GITHUB_DEPOT_DISTANT]* par votre URL par exemple par *https://github.com/glo10/16042026_git*
+- Ensuite en local, effectuez la commande `git remote add origin [URL_GITHUB_DEPOT_DISTANT]`, en remplaçant *[URL_GITHUB_DEPOT_DISTANT]* par votre URL par exemple par *https://github.com/glo10/02072026_git*
 4. Créez un fichier *.gitignore* excluant le dossier *img*.
 5. Effectuez votre premier commit
 6. Renommez le nom de la branche *master* en *main* 
