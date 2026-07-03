@@ -1,6 +1,36 @@
 # Correction atelier 4.1 : travailler en équipe au jour le jour
 
-## Partie I : commit
+## Objectifs
+
+- [x] Lier un dépôt local avec un dépôt distant
+- [x] Envoyer les modifications locales vers le dépôt distant
+- [x] Recupérer les modifications distantes vers le dépôt local
+- [x] Associez des étiquettes (tag) aux hash du commit
+
+## Compétences validées
+
+- [x] Liaison dépôt local et distant avec `git remote`
+- [x] Utiliser la commande `git add` pour ajout les modifications à l'Index (Stage Area)
+- [x] Utiliser la commande `git commit` pour passer à un nouvelle version de son projet
+- [x] Utiliser la commande `git push` pour envoyer les modifications effectuées du local vers le distant
+- [x] Utiliser la commande `git pull` pour recevoir les modifications du distant vers le local
+
+
+## Synthèse commandes
+
+|                                            | Commande                                    |
+| ------------------------------------------ | ------------------------------------------- |
+| Ajouter les fichiers et/ou les dossiers dans l'index        | `git add`                 |
+| Faire un commit        | `git commit`                 |
+| Envoyer les modifications local vers le distant        | `git push`                 |
+| Recevoir les modifications du distant vers le local        | `git pull`                 |
+| Voir les modifications en cours et l'état de son projet     | `git status`                 |
+| Associer un tag à un commit        | `git tag v1.0.0 hashCommit`                 |
+| Associer les dépôts (local et distant)        | `git remote add origin URL`                 |
+
+## Correction
+
+### Partie I : commit
 
 1. Q1 : A la suite de l'atelier 2.1, créez un fichier *README.md* contenant la liste des ingrédients de votre sandwich préféré, un ingrédient par ligne comme dans l'exemple ci-après.
 - R1: [regarder le fichier README.md](./README.md)
@@ -20,7 +50,7 @@ git commit -am "first commit"
 # Ou décomposer avec les commandes suivantes
 git add .
 git commit -m "first commit"
-# git add . , avec le point, git ajoute tous les fichiers et dossiers du dossier courant dont le status est nouveau ou modifiés (ne prend pas en compte les fichiers traqués qui ont été supprimmés)
+# git add . , avec le point, git ajoute tous les fichiers et dossiers du dossier courant dont le status est nouveau ou modifié (ne prend pas en compte les fichiers traqués qui ont été supprimmés)
 # Autres alternatifs
 # - "git add README.md un_autre_fichier.txt un_dossier/", ici vous ajoutez vos fichiers et dossiers en le séparant par un espace
 # - git add --all : ajoute tout, fichiers et dossiers dont le status est nouveau, modifié ou supprimé
@@ -51,11 +81,11 @@ git commit -am "refactor: update(2) README.md"
 # 3eme modification du fichier physique README.md
 git commit -am "refactor: update(3) README.md"
 ``` 
-- S'il n'y a pas de modification de votre dépôt et ni au moins un fichier dans l'index, la modification ne sera pas pris en compte.
+- S'il n'y a pas au moins une modification de votre dépôt depuis le dernier commet et qu'il n'y a rien dans l'index alors le `git commit n'aura aucun effet`.
 
 ---
 
-## Partie II : tag
+### Partie II : tag
 
 8. Q8 : utilisez la commande `git tag --help` pour voir la documentation de cette commande
 ```bash
@@ -100,7 +130,7 @@ git remote add origin https://github.com/glo10/new-repo-test.git # en remplaçan
 
 ---
 
-## Partie III : push/pull
+### Partie III : push/pull
 
 14. Q14 : envoyez vos fichiers vers le dépôt distant à l'aide de la commande `git push`
 ```bash
@@ -122,7 +152,7 @@ git pull
 
 ---
 
-## Partie IV : blame et diff
+### Partie IV : blame et diff
 
 18. Q18 : comparez l'état de votre dépôt entre le premier et le dernier commit à l'aide des hashs associées à chaque commit à l'aide de la commande `git diff [HASH_PREIMIER_COMMIT] [HASH_DERNIER_COMMIT]`
 ```bash
@@ -137,10 +167,10 @@ git diff a0256be f886b02
 # R19
 git diff a0256be f886b02 README.md
 ```
-
+<!-- 
 ---
 
-## Partie V : format-patch
+### Partie V : format-patch
 
 20. Q20 : votre sandwich burger fait fureur, collègues sont intéressés et vous décidez de créer un patch à l'aide de la commande `git format-patch -o ./patches 01a8c5b` pour extraire les changements depuis le commit juste avant l'ajout de votre sandwich burger.
 PS : *01a8c5b* à remplacer par le hash du commit précédent le commit ayant introduit le [burger.md](./burger.md) 
@@ -178,4 +208,4 @@ PS : remplacer *fichier_commit_burger.patch* par le chemin réelle sur votre dé
 # R25
 git status
 git log --oneline
-```
+``` -->

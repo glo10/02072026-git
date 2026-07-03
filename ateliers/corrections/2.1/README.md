@@ -1,5 +1,25 @@
 # Correction atelier 2.1 : prise en main de git
 
+## Objectifs
+
+- [x] Configurer sa machine en locale pour travailler avec Git
+- [x] Initialiser un dépôt Git
+
+## Compétences validées
+
+- [x] Utiliser la commande `git config` pour configurer Git
+- [x] Utiliser la commande `git init` pour versionner un nouveau projet ou un projet déjà existant
+
+
+## Synthèse commandes
+
+|                                            | Commande                                    |
+| ------------------------------------------ | ------------------------------------------- |
+| Configurer son nom          | `git config --gloabal user.name 'johnDoe`                 |
+| Configurer son email          | `git config --gloabal user.email 'john@doe.com`                 |
+| Initialiser un nouveau dépôt Git en local          | `git init`                 |
+
+## Corrections
 
 1. Question (Q) : utilisez la commande `git config --help` pour voir la documentation complète de cette commande.
 ```bash

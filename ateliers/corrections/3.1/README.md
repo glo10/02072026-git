@@ -1,5 +1,25 @@
 # Correction atelier 3.1 : comprendre les principes de git
 
+## Objectifs
+
+- [x] Cloner des projets distants
+- [x] Explorer l'historique d'un projet Git
+
+## Compétences validées
+
+- [x] Utiliser la commande `git clone` pour cloner un projet distant (depuis GitHub, GitLab, BitBucket)
+- [x] Utiliser la commande `git log` pour voir l'historique des commandes
+
+
+## Synthèse commandes
+
+|                                            | Commande                                    |
+| ------------------------------------------ | ------------------------------------------- |
+| Cloner un dépôt distant à partir de son URL         | `git clone URL`                 |
+| Lire l'historique        | `git log`                 |
+
+## Correction
+
 1. Q1 : clonez les dépôts contenant les frameworks JS
 - [https://github.com/facebook/react](https://github.com/facebook/react)
 - [https://github.com/angular/angular](https://github.com/angular/angular)
@@ -23,4 +43,4 @@ git log --graph --all
 ```
 
 3. Q3 : explorez le Web et cloner un projet git de votre choix.
-- R3 : vous avez l'embarras du choix depuis [GitHub](https://github.com)avec tous les dépôts
+- R3 : vous avez l'embarras du choix depuis [GitHub](https://github.com) avec tous les dépôts

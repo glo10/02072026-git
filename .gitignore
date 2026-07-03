@@ -14,3 +14,4 @@ private*
 # ignorer tous les fichiers qui commence par private
 demos/v0
 schemas
+.gitignore
