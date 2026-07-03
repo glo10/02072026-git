@@ -7,7 +7,7 @@
 - Commit et branches idéalement en **Anglais**
 - Ne travaillez pas directement sur la branche *main*
 - Attention à la casse (majuscules et miniscules) dans le nom de vos dossiers et fichiers
-    - pour Git le dossier *pronostics/* est différent du dossier *pronostics/*
+    - pour Git le dossier *pronostics/* est différent du dossier *Pronostics/*
     - Si vous ne respectez pas la casse, il y a des grandes chances de ne pas avoir des conflits à résoudre dans le cadre de ce TP.
 
 ---
