@@ -4,14 +4,10 @@
 **/corrections
 cours
 daily.md
-patches
-tp
 .vscode
-private*
 *excalidraw
 # ignorer tous le fichiers avec extensions .png
 *.png
 # ignorer tous les fichiers qui commence par private
 demos/v0
-schemas
 .gitignore
