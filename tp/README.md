@@ -19,8 +19,7 @@
 - [x] Gestion des conflits
 - [x] La manipulation des branches locales & distantes
 - [x] Les tags
-- [x] L'application de patchs ou de cherry-pick
-- [x] La recherche par dichotomie
+- [x] L'application de patchs avec cherry-pick
 
 ---
 
