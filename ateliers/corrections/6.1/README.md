@@ -1,5 +1,25 @@
 # Correction atelier 6.1 : compléments
 
+## Objectifs
+
+- [x] Trouver rapidement l'origine d'un bug
+- [x] Exporter la recherche menant au commit introduisant un bug dans un fichier texte
+
+## Compétences validées
+
+- [x] Recherche par dichotomie
+
+## Synthèse commandes
+
+|                                            | Commande                                    |
+| ------------------------------------------ | ------------------------------------------- |
+|  Démarrer la recherche    | `git bisect start`                 |
+|  Lorsque le contenu recherché ne présente pas de bug    | `git bisect good`                 |
+|  Lorsque le contenu recherché présente le bug    | `git bisect bad`                 |
+|  Pour quitter la recherche    | `git bisect reset`                 |
+|  Pour rejouer depuis le fichier .txt les étapes de la recherche    | `git bisect replay fichier.txt`                 |
+|  Pour voir les modifications effectuées lors de l'introduction du bug  | `git show hashCommitIntroduisantLebug`                 |
+
 1. Q1 : reprenez [l'atelier 3.1](../3.1/) avec le clonage des framework ***Vue/core*** dont le lien du remote est [https://github.com/vuejs/core](https://github.com/vuejs/core).
 - R1 : cf. [atelier 3.1](../../3.1.md)
 2. Q2 : vous devez enquêter en utilisant la recherche dichotomique afin de trouver le premier commit qui a introduit la version 5.6 de TypeScript dans le framework.

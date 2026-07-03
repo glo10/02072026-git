@@ -1,5 +1,22 @@
 # Correction atelier 7.1 : méthodologie et organisation
 
+## Objectifs
+
+- [x] Modifier l'historique locale dans les bonnes conditions
+
+## Compétences validées
+
+- [x] Manipuler l'historique
+
+## Synthèse commandes
+
+|                                            | Commande                                    |
+| ------------------------------------------ | ------------------------------------------- |
+|  Supprimer les commits sans supprimer les modifications apportées aux fichiers   | `git reset --soft ou git reset --mixed`                 |
+|  Supprimer les commits et les modifications effectuées    | `git reset --hard`                 |
+|  Lorsque le contenu recherché présente le bug    | `git bisect bad`                 |
+|  Se déplacer dans l'historique en mode spectateur    | `git checkout hashCommit`                 |
+
 ## Partie I : reset
 
 1. Q1 : reprenez le dépôt sur les sandwichs

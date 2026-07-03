@@ -11,7 +11,8 @@
 
 - [x] Manipuler les branches
 - [x] Résoudre des conflits entre les branches
-- [x] 
+- [x] Fusionnez les branches
+- [x] Récupérer les modifications distants sans affecter son espace de travail
 
 
 ## Synthèse commandes
@@ -20,6 +21,10 @@
 | ------------------------------------------ | ------------------------------------------- |
 |  Créer une branche     | `git branch nomDeMaBranche`                 |
 |  Se placer sur une branche    | `git checkout nomDeMaBranche`                 |
+|  Créer et se placer directement sur la branche    | `git checkout -b nomDeMaBranche`                 |
+|  Supprimer une branche sans forcer   | `git branch -d nomDeMaBranche`                 |
+|  Supprimer une branche en forçant    | `git branch -D nomDeMaBranche`                 |
+|  Récuperer les mises à jour depuis le dépôt distant sans les affecter directement dans son espace de travail (Working Directory)   | `git fetch`                 |
 
 ## Correction
 
@@ -118,7 +123,7 @@ git push
 17. Q17 : affichez l'historique graphique de votre dépôt
 ```bash
 # R17
-git log --oneline
+git log --oneline --graph
 ```
 18. Q18 : supprimez les branches *feature/** en local
 
